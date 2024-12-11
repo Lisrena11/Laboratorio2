@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Separado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario</h2>
+        <form id="myForm">
+            <div class="form-group">
+                <label for="nomtar">Nombre Tarea:</label>
+                <input type="text" id="nomtar" name="nomtar" placeholder="Ingrese el nombre de la tarea" required>
+            </div>
+            <div class="form-group">
+                <label for="destar">Descripcion:</label>
+                <input type="text" id="destar" name="destar" placeholder="Ingrese su descripcion" required>
+            </div>
+            <div class="form-group">
+                <label for="esttar">Estado:</label>
+                <input type="text" id="esttar" name="esttar" placeholder="Ingrese estado" required>
+            </div>
+            <div class="button-group">
+                <button type="button" onclick="addLS()" class="btn-submit">Crear</button>
+                <button type="button" onclick="conLS()" class="btn-reset">Consultar</button>
+                <button type="button" onclick="modLS()" class="btn-reset">Actualizar</button>
+                <button type="button" onclick="eliLS()" class="btn-reset">Eliminar</button>
+            </div>
+		
+        </form>
+	<div></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
